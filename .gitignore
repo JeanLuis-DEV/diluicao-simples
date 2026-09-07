@@ -1,0 +1,19 @@
+node_modules/
+dist/
+*.local
+
+# Testes, caches e logs
+coverage/
+.vite/
+*.log
+
+# IDE e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+*~

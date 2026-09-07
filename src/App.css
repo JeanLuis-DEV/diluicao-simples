@@ -1,0 +1,281 @@
+.dilution-page {
+  display: grid;
+  gap: var(--as-space-6);
+}
+
+.welcome-page {
+  display: grid;
+  place-items: center;
+  min-height: min(32rem, calc(100dvh - 10rem));
+}
+
+.welcome-card,
+.welcome-card__content,
+.welcome-card__actions,
+.support-card,
+.support-card__heading,
+.support-card__actions {
+  display: grid;
+}
+
+.welcome-card {
+  max-width: 40rem;
+  gap: var(--as-space-6);
+}
+
+.welcome-card__content {
+  gap: var(--as-space-3);
+}
+
+.welcome-card__content p {
+  color: var(--as-color-text-secondary);
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
+  text-align: left;
+}
+
+.welcome-card__optional {
+  font-size: var(--as-font-size-sm);
+}
+
+.welcome-card__actions {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--as-space-3);
+}
+
+.welcome-card__actions .as-button {
+  width: 100%;
+}
+
+.manual-pix__field {
+  margin-top: var(--as-space-4);
+}
+
+.page-intro,
+.result-card,
+.result-card__heading,
+.institutional-content {
+  display: grid;
+}
+
+.page-intro,
+.result-card__heading,
+.institutional-content {
+  gap: var(--as-space-2);
+}
+
+.calculator-card,
+.result-card {
+  padding: var(--as-space-4);
+}
+
+.calculator-form {
+  display: grid;
+  gap: var(--as-space-4);
+}
+
+.amount-fields {
+  display: grid;
+  align-items: start;
+  gap: var(--as-space-4);
+}
+
+.calculate-button {
+  width: 100%;
+}
+
+.result-region:empty {
+  display: none;
+}
+
+.result-card {
+  gap: var(--as-space-4);
+}
+
+.result-card h2,
+.institutional-content h3,
+.institutional-content p,
+.readable-content p,
+.result-explanation,
+.eyebrow,
+.privacy-link {
+  margin: 0;
+}
+
+.eyebrow {
+  color: var(--as-color-primary);
+  font-size: var(--as-font-size-sm);
+  font-weight: var(--as-font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.result-card h2 {
+  font-size: var(--as-font-size-lg);
+}
+
+.result-values {
+  display: grid;
+  gap: var(--as-space-3);
+  margin: 0;
+}
+
+.result-values > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--as-space-2) var(--as-space-4);
+  padding-block: var(--as-space-3);
+  border-bottom: 1px solid var(--as-color-border-subtle);
+}
+
+.result-values dt,
+.result-explanation {
+  color: var(--as-color-text-secondary);
+}
+
+.result-values dd {
+  margin: 0;
+  font-size: var(--as-font-size-xl);
+  font-weight: var(--as-font-weight-semibold);
+}
+
+.institutional-actions {
+  display: grid;
+  justify-items: center;
+  gap: var(--as-space-2);
+}
+
+.institutional-actions__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--as-space-1);
+}
+
+.institutional-content + .institutional-content {
+  margin-top: var(--as-space-4);
+}
+
+.institutional-content h3 {
+  font-size: var(--as-font-size-md);
+}
+
+.privacy-link {
+  margin-top: var(--as-space-4);
+}
+
+.privacy-link a {
+  color: var(--as-color-primary);
+  font-weight: var(--as-font-weight-semibold);
+}
+
+.readable-content {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+
+.modal-footer-actions {
+  display: flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--as-space-2);
+}
+
+.pix-details {
+  display: grid;
+  width: 100%;
+  gap: var(--as-space-3);
+  margin: 0;
+}
+
+.pix-details > div {
+  display: grid;
+  grid-template-columns: minmax(5rem, auto) minmax(0, 1fr);
+  gap: var(--as-space-3);
+}
+
+.pix-details dt {
+  color: var(--as-color-text-secondary);
+  font-size: var(--as-font-size-sm);
+}
+
+.pix-details dd {
+  min-width: 0;
+  margin: 0;
+}
+
+.pix-key {
+  overflow-wrap: anywhere;
+}
+
+.support-card {
+  gap: var(--as-space-6);
+  justify-items: start;
+}
+
+.support-card__heading {
+  gap: var(--as-space-2);
+}
+
+.support-card h2,
+.support-card p {
+  margin: 0;
+}
+
+.support-card h2 {
+  font-size: var(--as-font-size-lg);
+  font-weight: var(--as-font-weight-semibold);
+  line-height: 1.3;
+}
+
+.support-card__heading p {
+  color: var(--as-color-text-secondary);
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
+  text-align: left;
+}
+
+.support-card__actions {
+  width: 100%;
+  gap: var(--as-space-4);
+  justify-items: center;
+}
+
+@media (min-width: 640px) {
+  .welcome-card__actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .calculator-card,
+  .result-card {
+    padding: var(--as-space-6);
+  }
+
+  .amount-fields {
+    grid-template-columns: minmax(0, 1fr) minmax(9rem, 0.35fr);
+  }
+
+  .calculate-button {
+    width: auto;
+    min-width: 11rem;
+    justify-self: center;
+  }
+
+  .readable-content p {
+    text-align: justify;
+  }
+
+  .result-values {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .result-values > div {
+    display: grid;
+    border: 0;
+  }
+}
